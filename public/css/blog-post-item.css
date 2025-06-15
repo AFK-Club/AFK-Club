@@ -1,0 +1,24 @@
+.a-link {
+    color: inherit;
+}
+
+.blog-item {
+    background-color: rgb(160, 160, 199);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-xl-2xl);
+}
+
+.blog-item img {
+    height: min(20rem, 100vw - var(--space-m));
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .blog-item {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,16 +1,22 @@
 
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
-// export default function (eleventyConfig) {
-// 	// eleventyConfig.setInputDirectory("src");
-// 	// eleventyConfig.setOutputDirectory("dist");
+export default function (eleventyConfig) {
+	eleventyConfig.setInputDirectory("src");
+	eleventyConfig.setOutputDirectory("dist");
+	eleventyConfig.setIncludesDirectory("_includes");
 
-// 	eleventyConfig.addWatchTarget("css/**/*.css");
-// 	// Watch images for the image pipeline.
-// 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
+	eleventyConfig.addWatchTarget("src")
+	eleventyConfig.addWatchTarget("css/**/*.css");
+	//Watch images for the image pipeline.
+	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
 
-// 	eleventyConfig.addPlugin(syntaxHighlight);
-// };
+	eleventyConfig.addPlugin(syntaxHighlight);
+	eleventyConfig.addPassthroughCopy({
+		"./public/": "/"
+	});
+
+};
 
 
 
@@ -18,9 +24,9 @@ export const config = {
 	markdownTemplateEngine: 'njk',
 	dataTemplateEngine: 'njk',
 	htmlTemplateEngine: 'njk',
-	dir: {
-		input: 'src',
-		output: 'dist',
-		includes: '_includes',
-	}
+	// dir: {
+	// 	input: 'src',
+	// 	output: 'dist',
+	// 	includes: '_includes',
+	// }
 };

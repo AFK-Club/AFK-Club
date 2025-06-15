@@ -1,7 +1,42 @@
 {% extends "layouts/base.html" %}
+
+{% block css %}
+{# THIS IS FROM HOME.HTML #}
+<link rel="stylesheet" href="css/blog-post-item.css">
+{# THIS IS FROM HOME.HTML #}
+{% endblock css %}
+
 {% block content %}
-<article>
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
+
+{# START Hero #}
+<article class="hero section">
+	<div class="hero-content container wrapper flow">
+		<h1 class="">
+			{{ intro.heroText }}
+		</h1>
 </article>
+{# END Hero #}
+
+<section class="section">
+	<div class="blog-space container wrapper flow">
+		<ul class="blog-item-ul">
+			<li class="list-container ">
+				{% set blogItemContent = testBlogItem %}
+				{% include "partials/blogItem.html" %}
+			</li>
+			{%- for post in collections.post -%}
+			<li class="list-container wrapper">
+				{% set blogItemContent = post.data.blogItem %}
+				{% include "partials/blogItem.html" %}
+			</li>
+			{%- endfor -%}
+		</ul>
+		<aside class="aside-img flow">
+			<img src="images/dog_2.png" alt="">
+		</aside>
+	</div>
+</section>
+
+
+
 {% endblock %}

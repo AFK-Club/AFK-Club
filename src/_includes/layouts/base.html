@@ -4,13 +4,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {# THIS IS FROM BASE.HTML #}
+    <link rel="stylesheet" href="css/root-values.css">
+    <link rel="stylesheet" href="css/base-style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    {# THIS IS FROM BASE.HTML #}
+
+    {% block css %}
+        
+    {% endblock css %}
+    
     <title>{{ title }}</title>
 </head>
 
 <body>
-    {% block content %}
-    <p>awdawd</p>
-    {% endblock %}
+    {# This is the navbar of the site #}
+    {% include "partials/site-navbar.html" %}
+
+    <main class="test" tabindex="-1" id="main-content">
+        {# If content is changed when included, this renders #}
+        {% block content %}
+        <p>This comes from base</p>
+        {% endblock %}
+    </main>
 </body>
 
 </html>

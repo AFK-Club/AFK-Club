@@ -1,0 +1,22 @@
+.navbar {
+    background-color: var(--color-primary);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 20px;
+    padding: 0;
+
+}

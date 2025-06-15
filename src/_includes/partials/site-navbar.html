@@ -1,0 +1,17 @@
+<a class="skip" href="">Skip to content</a>
+<header class="navbar">
+    <div class="nav-container container">
+        <a href="/" aria-label="{{ site.name }} - home" class="">
+            {% include "partials/brand.svg" %}
+        </a>
+        <nav class="">
+            <ul class="nav-list">
+                {% for item in navigation.items %}
+                <li>
+                    <a href="{{ item.url }}"> {{ item.text }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>
