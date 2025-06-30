@@ -9,7 +9,7 @@ blogItem:
     summary: test 2 makes ...
     url: https://www.youtube.com/watch?v=JtYYI43r9M4&ab_channel=CcinoWrath
     urlText: Press this  
-    imageUrl: images/dog_2.png
+    imageUrl: images/frog.jpg
 
 ---
 
