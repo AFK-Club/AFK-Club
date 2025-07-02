@@ -18,14 +18,14 @@
 {# END Hero #}
 
 <section class="section">
-	<div class="container wrapper flow">
-		<ul class="blog-item-ul">
+	<div class="container flow">
+		<ul class="wrapper grid" role="list" data-rows="masonry" data-layout="50-50">
 			<li class="list-container flow">
 				{% set blogItemContent = testBlogItem %}
 				{% include "partials/blogItem.html" %}
 			</li>
 			{%- for post in collections.post -%}
-			<li class="list-container wrapper flow">
+			<li class="list-container flow">
 				{% set blogItemContent = post.data.blogItem %}
 				{% include "partials/blogItem.html" %}
 			</li>
