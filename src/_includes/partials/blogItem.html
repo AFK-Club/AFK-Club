@@ -4,12 +4,14 @@
 {% set blogItemPrefix = blogItemContent %}
 {% endif %}
 
-<a class="a-link" href="{{ blogItemPrefix.url }}">
-  <div class="blog-item-container flow">
-    <img src="{{ blogItemPrefix.imageUrl }}" alt="">
-    <div class="">
-      <h3 class="">{{ blogItemPrefix.title }}</h3>
-      <p class="">{{ blogItemPrefix.summary }}</p>
+<div class="blog-item">
+  <a class="a-link" href="{{ blogItemPrefix.url }}">
+    <div class="blog-item-container">
+      <img src="{{ blogItemPrefix.imageUrl }}" alt="">
+      <div class="">
+        <h3 class="">{{ blogItemPrefix.title }}</h3>
+        <p class="">{{ blogItemPrefix.summary }}</p>
+      </div>
     </div>
-  </div>
-</a>
+  </a>
+</div>

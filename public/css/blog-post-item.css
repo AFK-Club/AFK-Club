@@ -4,8 +4,10 @@
 
 .blog-item {
     list-style-type: none;
+    /* for radius  
     border-radius: var(--border-radius-small);
     overflow: hidden;
+    */
     max-width: unset;
     border: 5px solid;
     border-color: var(--color-primary);
@@ -20,14 +22,19 @@
     width: 100%;
     object-fit: cover;
     background-color: var(--color-cards); 
+    display: flex;
 }
 
 .blog-item-container img {
-    width: 100%;
-    height: min(30rem, 100vw - var(--space-xl));
+    width: 30%;
+    height: min(15rem, 100vw - var(--space-xl));
     object-fit: cover;
 }
 
+.blog-item-container h3, p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 @media screen and (max-width: 1000px) {
     .blog-item {

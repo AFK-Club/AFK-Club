@@ -101,6 +101,8 @@
 
 .list-container {
     list-style-type: none;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
 }
 
 .blog-space {
