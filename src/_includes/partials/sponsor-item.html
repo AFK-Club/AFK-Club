@@ -1,0 +1,19 @@
+<div>
+    <ul class="">
+        {% for item in sponsor.items %}
+
+        {%if item.show%}
+        <li>
+            <a href="{{ item.url }}">
+                <div>
+                    <p>{{ item.name }}</p>
+                    <img src="{{ item.logo }}" alt="{{ item.name }}">
+                </div>
+            </a>
+
+        </li>
+        {%endif%}
+
+        {% endfor %}
+    </ul>
+</div>
