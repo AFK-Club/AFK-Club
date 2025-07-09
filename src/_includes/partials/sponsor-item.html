@@ -2,7 +2,7 @@
     <ul class="">
         {% for item in sponsor.items %}
 
-        {%if item.show%}
+        {%if item.show %}
         <li>
             <a href="{{ item.url }}">
                 <div>
@@ -10,7 +10,7 @@
                     <img src="{{ item.logo }}" alt="{{ item.name }}">
                 </div>
             </a>
-
+            
         </li>
         {%endif%}
 
