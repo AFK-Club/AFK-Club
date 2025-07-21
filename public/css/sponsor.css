@@ -1,0 +1,19 @@
+.sponsor-grid {
+    list-style: none;
+    display: grid;
+    grid-gap: var(--space-s-m);
+    grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 21rem), 1fr));
+    justify-items: center;
+}
+
+.sponsor-img {
+    width: 100%;
+    object-fit: cover;
+
+    img {
+        max-width: 100%;
+        width: min(10rem, 40vw - var(--space-s));
+        height: min(10rem, 40vw - var(--space-s));
+        align-self: center;
+    }
+}

@@ -9,13 +9,6 @@
         },
         {
             "name": "test",
-            "url": "https://www.youtube.com/watch?v=Z_LToZN84Rg&list=PLmkwuXYDFuSYRSyALtoumYvUF7IDHF6Xy&index=3",
-            "logo": "index-svgrepo-com.svg",
-            "show": true,
-            "order": 2
-        },
-        {
-            "name": "test",
             "url": "https://www.youtube.com/watch?v=UOavrJ38E4w&list=PLmkwuXYDFuSYRSyALtoumYvUF7IDHF6Xy&index=4",
             "logo": "loss-svgrepo-com.svg",
             "show": true,
@@ -34,13 +27,6 @@
             "logo": "profit-svgrepo-com.svg",
             "show": true,
             "order": 5
-        },
-        {
-            "name": "test",
-            "url": "https://www.youtube.com/watch?v=KsxRbo5VuTc&list=PLmkwuXYDFuSYRSyALtoumYvUF7IDHF6Xy&index=12",
-            "logo": "law-svgrepo-com.svg",
-            "show": true,
-            "order": 6
         }
     ]
 }

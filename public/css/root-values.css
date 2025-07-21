@@ -41,8 +41,9 @@
     --space-2xl-3xl: clamp(4.5rem, 3.4565rem + 5.2174vw, 7.5rem);
 
     /* Custom pairs */
-    --space-s-xl: clamp(1.125rem, 0.212rem + 4.5652vw, 3.75rem);
+    --space-s-m: clamp(1.125rem, 0.8212rem + 1.519vw, 1.875rem);
     --space-s-l: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
+    --space-s-xl: clamp(1.125rem, 0.212rem + 4.5652vw, 3.75rem);
     --space-l-2xl: clamp(2.25rem, 1.2935rem + 4.7826vw, 5rem);
 
     --size-step-0: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);

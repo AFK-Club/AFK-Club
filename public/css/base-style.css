@@ -4,6 +4,10 @@
 */
 
 /* Hide elements, used for screen readers */
+.center{
+    text-align: center
+}
+
 .skip {
     position: absolute;
     left: -10000px;
@@ -17,11 +21,6 @@
     position: static;
     width: auto;
     height: auto;
-}
-
-.test {
-    padding: 0;
-    margin: 0;
 }
 
 .container {

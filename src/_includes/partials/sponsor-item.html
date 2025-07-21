@@ -1,17 +1,15 @@
-<div>
-    <ul class="">
-        {% for item in sponsor.items %}
+<ul class="sponsor-grid" role="list" data-rows="masonry" data-layout="50-50">
+    {% for item in sponsor.items %}
 
-        {%if item.show %}
-        <li>
+    {%if item.show %}
+    <li class="">
+        <div class="wrapper sponsor-img">
             <a href="{{ item.url }}">
-                <div>
-                    <img src="images/svg/{{ item.logo }}" alt="{{ item.name }}">
-                </div>
+                <img src="images/svg/{{ item.logo }}" alt="{{ item.name }}">
             </a>
-        </li>
-        {%endif%}
+        </div>
+    </li>
+    {%endif%}
 
-        {% endfor %}
-    </ul>
-</div>
+    {% endfor %}
+</ul>
