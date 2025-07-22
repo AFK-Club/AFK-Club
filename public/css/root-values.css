@@ -129,7 +129,6 @@ a {
     text-decoration: none;
 }
 
-
 button {
     border-style: none;
     border-radius: 1rem;
@@ -141,4 +140,9 @@ button {
 
 button:hover {
     background-color: var(--color-secondary-hover);
+}
+
+footer{
+    background-color: var(--color-fg);
+    color: var(--color-light-text);
 }
