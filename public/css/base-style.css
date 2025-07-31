@@ -115,3 +115,16 @@
     flex-grow: 1;
     flex-basis: 350px;
 }
+
+.social-media {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+
+    img {
+        width: 100%;
+        height: min(3.5rem, 100vw - var(--space-xl));
+        object-fit: cover;
+    }
+}

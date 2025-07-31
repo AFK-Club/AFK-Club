@@ -1,0 +1,19 @@
+{
+	"items": [
+		{
+			"name": "Instagram",
+			"url": "https://www.instagram.com/",
+			"logo": "instagram/gradient/Instagram_Glyph_Gradient.png"
+		},
+		{
+			"name": "Facebook",
+			"url": "https://www.facebook.com/",
+			"logo": "facebook/primary/Facebook_Logo_Primary.png"
+		},
+		{
+			"name": "X.com",
+			"url": "https://x.com/",
+			"logo": "x-logo/logo-white.png"
+		}
+	]
+}

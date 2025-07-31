@@ -15,10 +15,13 @@
             <h3>
                 Follow Oss
             </h3>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-
+            <div class="social-media">
+                {% for item in socialmedia.items %}
+                <a href="{{ item.url }}">
+                    <img src="images/social-media/{{ item.logo }}" alt="{{ item.name }}">
+                </a>
+                {% endfor %}
+            </div>
         </div>
     </div>
 
