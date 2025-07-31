@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     {# THIS IS FROM BASE.HTML #}
     <link rel="stylesheet" href="css/root-values.css">
     <link rel="stylesheet" href="css/base-style.css">
     <link rel="stylesheet" href="css/navbar.css">
     {# THIS IS FROM BASE.HTML #}
 
+    {# Can insert css #}
     {% block css %}
         
     {% endblock css %}
@@ -18,16 +20,17 @@
 </head>
 
 <body>
-    {# This is the navbar of the site #}
+    {# This is the navbar #}
     {% include "partials/site-navbar.html" %}
 
-    <main class="test" tabindex="-1" id="main-content">
+    <main class="" tabindex="-1" id="main-content">
         {# If content is changed when included, this renders #}
         {% block content %}
         <p>This comes from base</p>
         {% endblock %}
     </main>
 
+    {# This is the footer#}
     {% include "partials/footer.html" %}
 </body>
 
