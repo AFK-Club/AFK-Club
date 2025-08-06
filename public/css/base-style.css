@@ -100,6 +100,10 @@
     padding-right: var(--gutter);
 }
 
+.mission-statement{
+    background-color: rgb(12, 117, 56);
+}
+
 .side-by-side {
     display: flex;
     flex-wrap: wrap;
