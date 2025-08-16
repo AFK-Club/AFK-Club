@@ -1,8 +1,7 @@
 ---
 title: "New post"
 tags: "post"
-date: "Last Modified"
-#date: 2012-12-12
+date: 2025-07-16
 
 blogItem:
     title: This is test 1 with text that is long  

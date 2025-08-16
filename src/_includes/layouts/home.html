@@ -66,7 +66,7 @@
 				{% set blogItemContent = testBlogItem %}
 				{% include "partials/blogItem.html" %}
 			</li>
-			{%- for post in collections.post -%}
+			{%- for post in collections.post | reverse -%}
 			<li class="list-container flow">
 				{% set blogItemContent = post.data.blogItem %}
 				{% include "partials/blogItem.html" %}
