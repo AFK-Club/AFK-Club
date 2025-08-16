@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     {# THIS IS FROM BASE.HTML #}
     <link rel="stylesheet" href="css/root-values.css">
     <link rel="stylesheet" href="css/base-style.css">
@@ -13,9 +13,9 @@
 
     {# Can insert css #}
     {% block css %}
-        
+
     {% endblock css %}
-    
+
     <title>{{ title }}</title>
 </head>
 
@@ -28,10 +28,12 @@
         {% block content %}
         <p>This comes from base</p>
         {% endblock %}
+        <script src="scripts/hamburger.js"></script>
     </main>
 
     {# This is the footer#}
     {% include "partials/footer.html" %}
+
 </body>
 
 </html>

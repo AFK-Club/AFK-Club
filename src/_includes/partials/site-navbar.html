@@ -1,9 +1,13 @@
 <a class="skip" href="">Skip to content</a>
 <header class="navbar">
     <div class="nav-container container">
-        <a href="/" aria-label="{{ site.name }} - home" class="">
-            {% include "partials/brand.svg" %}
-        </a>
+
+        <div class="logo-content">
+            <a href="/" aria-label="{{ site.name }} - home" class="">
+                <h1>AFK Club</h1>
+            </a>
+        </div>
+
         <nav class="">
             <ul class="nav-list">
                 {% for item in navigation.items %}
@@ -12,6 +16,22 @@
                 </li>
                 {% endfor %}
             </ul>
+
+            <button class="hamburger no-hover">
+                <div class="bar">
+                </div>
+            </button>
+
+            <div class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    {% for item in navigation.items %}
+                    <li class="mobile-nav-list-item">
+                        <a href="{{ item.url }}"> {{ item.text }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
         </nav>
     </div>
 </header>
