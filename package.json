@@ -9,8 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/AFK-Club/homepage"
+    "url": "https://github.com/AFK-Club/AFK-Club"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/AFK-Club/issues"
   },
-  "homepage": "https://github.com/AFK-Club/AFK-Club#readme",
+  "homepage": "https://github.com/AFK-Club/AFK-Club/",
   "dependencies": {
     "@11ty/eleventy": "^3.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1"

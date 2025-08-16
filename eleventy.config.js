@@ -2,6 +2,8 @@
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function (eleventyConfig) {
+	eleventyConfig.addPlugin(syntaxHighlight);
+	
 	eleventyConfig.setInputDirectory("src");
 	eleventyConfig.setOutputDirectory("dist");
 	eleventyConfig.setIncludesDirectory("_includes");
@@ -11,7 +13,6 @@ export default function (eleventyConfig) {
 	//Watch images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
 
-	eleventyConfig.addPlugin(syntaxHighlight);
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/"
 	});
