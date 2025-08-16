@@ -1,23 +1,23 @@
 {
   "name": "afk-club",
-  "version": "1.0.0",
+  "version": "0.5.0",
   "description": "--- title: Heading ---",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "NODE_ENV=production eleventy",
     "start": "npx @11ty/eleventy --serve --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AFK-Club/AFK-Club.git"
+    "url": "https://github.com/AFK-Club/homepage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/AFK-Club/AFK-Club/issues"
+    "url": "https://github.com/AFK-Club/issues"
   },
   "homepage": "https://github.com/AFK-Club/AFK-Club#readme",
   "dependencies": {
