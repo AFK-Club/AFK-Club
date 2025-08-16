@@ -1,4 +1,4 @@
-	
+{# 	Comment out to github pages will ignore the file  
 Get info from the md file (index) then adds it when building
     </div>
 		<p class="">{{ intro.summary }}</p>
@@ -35,4 +35,4 @@ Can use a md file for info, or a Json file.
 {% set blogItemContent = post.data.blogItem %}
 {% include "partials/blogItem.html" %}
 
-{%- endfor -%}
+{%- endfor -%} #}
