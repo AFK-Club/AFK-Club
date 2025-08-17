@@ -9,7 +9,7 @@ blogItem:
     summary: test 2 makes ...
     url: posts/test2/
     urlText: Press this  
-    imageUrl: images/frog.jpg
+    imageUrl: frog.jpg
 
 ---
 

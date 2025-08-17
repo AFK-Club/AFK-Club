@@ -1,9 +1,11 @@
 
+import { HtmlBasePlugin } from "@11ty/eleventy"
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function (eleventyConfig) {
+	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(syntaxHighlight);
-	
+
 	eleventyConfig.setInputDirectory("src");
 	eleventyConfig.setOutputDirectory("dist");
 	eleventyConfig.setIncludesDirectory("_includes");
@@ -22,6 +24,7 @@ export default function (eleventyConfig) {
 
 
 export const config = {
+	pathPrefix: "AFK-Club",
 	markdownTemplateEngine: 'njk',
 	dataTemplateEngine: 'njk',
 	htmlTemplateEngine: 'njk',

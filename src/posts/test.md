@@ -9,7 +9,7 @@ blogItem:
     summary: test 1 with text that is long and will not be bad trust me, I can not 
     url: posts/test/
     urlText: Press this  
-    imageUrl: images/dog_2.png
+    imageUrl: dog_2.png
 ---
 
 You idiot, you have fallen for it again!
