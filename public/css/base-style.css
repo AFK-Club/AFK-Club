@@ -6,6 +6,16 @@
 /* Hide elements, used for screen readers */
 .test {}
 
+.button-hover {
+    button {
+        transition: 0.8s;
+    }
+
+    button:hover {
+        background-color: var(--color-secondary-hover);
+    }
+}
+
 .center {
     text-align: center
 }
@@ -100,7 +110,7 @@
     padding-right: var(--gutter);
 }
 
-.mission-statement{
+.mission-statement {
     background-color: rgb(12, 117, 56);
 }
 
@@ -115,7 +125,7 @@
         object-fit: cover;
     }
 
-    h3{
+    h3 {
         margin-top: 0px;
         text-align: center;
     }
@@ -158,6 +168,5 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .side-by-side {
-    }
+    .side-by-side {}
 }

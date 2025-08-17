@@ -6,11 +6,11 @@
 		},
 		{
 			"text": "About",
-			"url": "/about-us/"
+			"url": "/about/"
 		},
 		{
 			"text": "Contact",
-			"url": "/contact/"
+			"url": "#contact"
 		}
 	]
 }

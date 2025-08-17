@@ -1,4 +1,4 @@
-<footer class="section">
+<footer id="contact" class="section">
     <div class="footer-content container">
         <div>
             <h3>
@@ -13,12 +13,12 @@
         </div>
         <div>
             <h3>
-                Follow Oss
+                Follow Us
             </h3>
             <div class="social-media">
                 {% for item in socialmedia.items %}
                 <a href="{{ item.url }}">
-                    <img src="images/social-media/{{ item.logo }}" alt="{{ item.name }}">
+                    <img src="/images/social-media/{{ item.logo }}" alt="{{ item.name }}">
                 </a>
                 {% endfor %}
             </div>

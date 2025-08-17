@@ -2,8 +2,8 @@
 
 {% block css %}
 {# THIS IS FROM HOME.HTML #}
-<link rel="stylesheet" href="css/blog-post-item.css">
-<link rel="stylesheet" href="css/sponsor.css">
+<link rel="stylesheet" href="/css/blog-post-item.css">
+<link rel="stylesheet" href="/css/sponsor.css">
 {# THIS IS FROM HOME.HTML #}
 {% endblock css %}
 
@@ -23,7 +23,7 @@
 <section class="section mission-statement">
 	<div class="container flow side-by-side">
 		<div>
-			<img src="images/frog.jpg" alt="">
+			<img src="/images/frog.jpg" alt="">
 		</div>
 		<div>
 			<h3>
@@ -62,10 +62,6 @@
 			Articles
 		</h3>
 		<ul class="wrapper grid" role="list" data-rows="masonry" data-layout="50-50">
-			<li class="list-container flow">
-				{% set blogItemContent = testBlogItem %}
-				{% include "partials/blogItem.html" %}
-			</li>
 			{%- for post in collections.post | reverse -%}
 			<li class="list-container flow">
 				{% set blogItemContent = post.data.blogItem %}
