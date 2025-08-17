@@ -56,6 +56,7 @@
 
     /* Background */
     --color-fg: #252525;
+    --color-mobile-nav-background: rgb(255, 255, 255);
     --color-bg: #f5f5f7;
 
     /* Text */
@@ -91,12 +92,19 @@ body {
 For some reason text had margin and padding on theme, breaking the web style.
 This fixes it 
 */
-h1, h2, h3, h4, h5, h6, p, a{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
     /* margin: 0;
     padding: 0; */
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
@@ -135,14 +143,9 @@ button {
     padding: 10px;
     font-size: var(--step-1);
     background-color: var(--color-secondary);
-    transition: 0.8s;
 }
 
-button:hover {
-    background-color: var(--color-secondary-hover);
-}
-
-footer{
+footer {
     background-color: var(--color-fg);
     color: var(--color-light-text);
 }
