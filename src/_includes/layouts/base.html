@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="{{ eleventy.generator }}">
 
     {# THIS IS FROM BASE.HTML #}
-    <link rel="stylesheet" href="css/root-values.css">
-    <link rel="stylesheet" href="css/base-style.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="/css/root-values.css">
+    <link rel="stylesheet" href="/css/base-style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     {# THIS IS FROM BASE.HTML #}
 
     {# Can insert css #}
@@ -28,7 +29,7 @@
         {% block content %}
         <p>This comes from base</p>
         {% endblock %}
-        <script src="scripts/hamburger.js"></script>
+        <script src="/scripts/hamburger.js"></script>
     </main>
 
     {# This is the footer#}
