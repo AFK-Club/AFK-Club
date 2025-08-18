@@ -6,6 +6,8 @@
     and changes to base element's
     for example text, buttons and links
 */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
     /* For Font */
@@ -52,7 +54,9 @@
     --border-radius-small: var(--size-step-0);
     --border-radius: var(--size-step-1);
 
-    --base-font: 'Roboto', sans-serif;
+    /* --base-font: 'Roboto', sans-serif; */
+    --base-font: "Merriweather Sans", sans-serif;
+    --header-font: "Bungee", sans-serif;
 
     /* Background */
     --color-fg: #252525;
@@ -88,50 +92,41 @@ body {
     background-color: var(--color-bg);
 }
 
-/* 
-For some reason text had margin and padding on theme, breaking the web style.
-This fixes it 
-*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-    /* margin: 0;
-    padding: 0; */
-}
-
 ul {
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    font-size: var(--step-5);
+    font-size: var(--step-4);
+    font-family: var(--header-font);
+    font-weight: 400;
 }
 
 h2 {
-    font-size: var(--step-3);
+    font-size: var(--step-2);
+    font-family: var(--header-font);
+    font-weight: 400;
 }
 
 h3 {
-    font-size: var(--step-2);
+    font-size: var(--step-1);
+    font-family: var(--header-font);
+    font-weight: 400;
 }
 
-h1 h2 h3 {
-    font-weight: 700;
+h4 {
+    font-size: var(--step-0);
 }
+
 
 p {
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     font-weight: 400;
 }
 
 a {
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     font-weight: 400;
     color: var(--color-link);
     text-decoration: none;

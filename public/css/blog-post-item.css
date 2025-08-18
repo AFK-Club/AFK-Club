@@ -33,18 +33,14 @@
     align-self: center;
 }
 
-.blog-item-container h3,
+.blog-item-container h4,
 p {
     margin: 2px;
     padding: 10px 10px 0px 10px;
 }
 
-.blog-item-container h3 {
-    font-size: var(--step-1);
-}
-
 .blog-item-container p {
-    font-size: var(--step-0);
+    font-size: 17px;
 }
 
 @media screen and (max-width: 1000px) {
